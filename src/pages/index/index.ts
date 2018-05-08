@@ -10,8 +10,9 @@ const debug = require('debug')('log:Index')
   components: {
     Card,
     CompB, //注意，vue的组件在template中的用法，`CompB` 会被转成 `comp-b`
-  }
-})
+  },
+  mpType: 'page',
+}as any)
 class Index extends Vue {
   AppUrls = AppUrls
   ver: number = 123
