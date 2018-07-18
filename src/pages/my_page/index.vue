@@ -1,12 +1,8 @@
 <template>
   <div class="counter-warp">
-    <p>Mpvue</p>
-    <p>ts value {{ ver }}</p>
-    <card text="card component"></card>
-    <comp-b text="comp b" ver="22"></comp-b>
-    <comp-alias text="hello3"></comp-alias>
+    <p>{{title}}</p>
     <a :href="AppUrls.COUNTER" class="home">去往vuex</a>
-    <a :href="AppUrls.my_page" class="home">去往My Page</a>
+
   </div>
 </template>
 <!--必须指定为ts-->
