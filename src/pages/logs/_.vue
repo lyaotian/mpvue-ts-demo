@@ -8,17 +8,5 @@
   </div>
 </template>
 
-<script lang="ts" src="./logs.ts">
-</script>
-
-<style>
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
-}
-
-.log-item {
-  margin: 10rpx;
-}
-</style>
+<script lang="ts" src="./_.ts"></script>
+<style scoped lang="scss" src="./_.scss"></style>

@@ -9,23 +9,6 @@
     <a :href="AppUrls.my_page" class="home">去往My Page</a>
   </div>
 </template>
-<!--必须指定为ts-->
-<script lang="ts" src="./index.ts">
-</script>
 
-
-<style>
-  .counter-warp {
-    text-align: center;
-    margin-top: 100px;
-  }
-
-  .home {
-    display: inline-block;
-    margin: 100px auto;
-    padding: 5px 10px;
-    color: blue;
-    border: 1px solid blue;
-  }
-
-</style>
+<script lang="ts" src="./_.ts"></script>
+<style scoped lang="scss" src="./_.scss"></style>
