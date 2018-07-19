@@ -1,6 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
-const debug = require('debug')('log:Comp/CompB')
+const debug = require("debug")("log:components/compb")
 
 // 必须使用装饰器的方式来指定component
 @Component({
@@ -15,17 +15,17 @@ class CompB extends Vue {
   @Prop({ default: 0 })
   ver: number
 
-  onShow() {
-    debug('onShow')
-  }
+  // onShow() {
+  //   debug('onShow')
+  // }
 
-  onHide() {
-    debug('onHide')
-  }
+  // onHide() {
+  //   debug('onHide')
+  // }
 
-  mounted() { // vue hook
-    debug('mounted')
-  }
+  // mounted() { // vue hook
+  //   debug('mounted')
+  // }
 }
 
 export default CompB

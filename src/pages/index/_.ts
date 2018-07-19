@@ -3,7 +3,7 @@ import { AppUrls } from '@/utils/consts.ts'
 import Card from '@/components/card.vue' // mpvue目前只支持的单文件组件
 import CompB from '@/components/compb.vue' // mpvue目前只支持的单文件组件
 
-const debug = require('debug')('log:Index')
+const debug = require("debug")("log:pages/index")
 
 // 必须使用装饰器的方式来指定component
 @Component({
@@ -20,8 +20,44 @@ class Index extends Vue {
     debug('onShow')
   }
 
-  mounted() { // vue hook
-    debug('mounted')
+  // beforeCreate
+  // created
+  // beforeMount
+  // mounted
+  // beforeUpdate
+  // updated
+  // activated
+  // deactivated
+  // beforeDestroy
+  // destroyed
+
+  beforeCreate() {
+    debug("beforeCreate")
+
+  }
+
+  created() {
+    debug("created")
+
+  }
+
+  mounted() {
+    debug("mounted")
+
+  }
+
+  updated() {
+    debug("updated")
+
+  }
+
+  activated() {
+    debug("activated")
+
+  }
+
+  destroyed() {
+    debug("destroyed")
   }
 }
 

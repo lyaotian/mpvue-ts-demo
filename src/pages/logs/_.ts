@@ -1,36 +1,50 @@
 import { Component, Vue } from "vue-property-decorator"
 import { AppUrls } from "@/utils/consts.ts"
 import Card from '@/components/card.vue' // mpvue目前只支持的单文件组件
-const debug = require("debug")("log:Page/Counter")
+const debug = require("debug")("log:pages/logs")
 
 import { formatTime } from '@/utils/index'
 
 @Component({
     components: {
-      Card
+        Card
     }
-  })
+})
 export default class Logs extends Vue {
     AppUrls = AppUrls
 
     count = 0
-    logs: any[] = []
+    logs: string[] = []
 
-    constructor() {
-        super()
+    beforeCreate() {
+        debug("beforeCreate")
+    }
+
+    created() {
+        debug("created")
+
         const logs = (wx.getStorageSync('logs') || [1])
         this.logs = logs.map(log => formatTime(new Date(log)))
 
         console.log(logs)
     }
 
-    increment() {
-        this.count += 1
-        debug("increment")
+    mounted() {
+        debug("mounted")
+
     }
 
-    decrement() {
-        this.count -= 1
-        debug("decrement")
+    updated() {
+        debug("updated")
+
+    }
+
+    activated() {
+        debug("activated")
+
+    }
+
+    destroyed() {
+        debug("destroyed")
     }
 }

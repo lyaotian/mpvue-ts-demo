@@ -1,5 +1,6 @@
 import { Vue, Component } from 'vue-property-decorator'
-const debug = require('debug')('log:App')
+
+const debug = require("debug")("log:app")
 
 declare module "vue/types/vue" {
   interface Vue {

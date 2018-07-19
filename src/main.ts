@@ -28,11 +28,10 @@ Vue.config.productionTip = false
 // 在这个地方引入是为了registerHooks先执行
 const MyApp = require('./App.vue').default as IMpVue
 
-
-
 const app = new Vue(MyApp)
 app.$mount()
 
+console.log(process.env)
 export default {
   // 这个字段走 app.json
   config: {
@@ -40,7 +39,7 @@ export default {
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: 'mpvue demo 2',
       navigationBarTextStyle: 'black'
     }
   }

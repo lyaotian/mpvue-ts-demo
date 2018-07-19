@@ -1,6 +1,6 @@
 import { Component, Vue } from "vue-property-decorator"
 import { AppUrls } from "@/utils/consts.ts"
-const debug = require("debug")("log:Page/Counter")
+const debug = require("debug")("log:pages/counter")
 
 @Component
 export default class Counter extends Vue {
